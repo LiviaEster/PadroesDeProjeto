@@ -34,7 +34,10 @@ public class Main {
 		case 4:
         		Calculadora divisao = new Calculadora();
 			resultado = divisao.divisao();
-                	
+                        break;
+                default:
+                    System.out.println("Digite apenas os números 1,2,3 ou 4. \n");
+                    main(args);
                 }
               
         System.out.println(" \n Digite: \n 1 para número em decimal \n 2 para binário \n 3 para hexadecimal \n 4 para octal \n");
@@ -56,15 +59,17 @@ public class Main {
         		AdapterOctal resultado3 = new AdapterOctal();
                         resultado3.DecimaltoOctal(resultado);
 			break;
-			}
+			
+                default:
+                System.out.println("Digite apenas os números 1,2,3 ou 4.\n ");
+                        break;
+                }
                 
                 System.out.println("Digite 1 para continuar usando a calculadora ou 2 para encerrar \n");
                 escolha3 = input.nextInt();
                 if(escolha3 == 1){
                 main(args);
                 }
-                else{
-                }  
                 
     }
 }
